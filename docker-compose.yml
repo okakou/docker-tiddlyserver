@@ -1,0 +1,11 @@
+version: '3'
+services:
+  tiddlyserver:
+    build: tiddlyserver
+    image: tiddlyserver
+    container_name: tiddlyserver
+    ports:
+      - 8080:8080
+    volumes:
+      - ./data:/data
+      - ./config:/config

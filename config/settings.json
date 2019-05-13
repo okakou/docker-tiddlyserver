@@ -1,0 +1,17 @@
+{
+	"_disableLocalHost": true,
+	"tree": {
+		"data": "/data"
+	},
+	"username": "",
+	"password": "",
+	"host": "0.0.0.0",
+	"port": "8080",
+	"backupDirectory": "/data/backup",
+	"etagWindow": 5,
+	"allowNetwork": {
+		"settings": true,
+		"mkdir": true,
+		"upload": true
+	}
+}
