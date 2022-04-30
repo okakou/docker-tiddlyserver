@@ -8,10 +8,11 @@ MAINTAINER Kouta Okamoto <okakou0512@gmail.com>
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install nodejs
-RUN apt-get update
-RUN apt-get install -y apt-utils curl wget zip gnupg
+RUN apt-get update && apt-get install -y \
+apt-utils curl wget zip gnupg
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
-RUN apt-get install -y nodejs
+RUN apt-get update && apt-get install -y \
+nodejs
 
 # Install tiddlyserver
 RUN wget https://github.com/Arlen22/TiddlyServer/archive/2.0.14-fixed.zip
